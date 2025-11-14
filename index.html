@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Belajar Pemrograman Dasar: tutorial membuat website, pengembangan, dan konsultasi IT.">
     <title>Beranda 💻 Progdas</title>
     <link rel="stylesheet" href="Beranda.css">
-    <link rel="icon" type="x-icon" href="Home.png">
+    <link rel="icon" type="image/x-icon" href="Home.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+	<a class="skip-link" href="#main" style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="logo">💻 Progdas</div>
         <ul class="nav-links">
-            <li><a href="Beranda.html">Beranda</a></li>
-            <li><a href="About.HTML">Tentang</a></li>
-            <li><a href="Contact.HTML">Kontak</a></li>
+            <li><a href="beranda.html">Beranda</a></li>
+            <li><a href="about.html">Tentang</a></li>
+            <li><a href="contact.html">Kontak</a></li>
         </ul>
     </nav>
 
+    <main id="main">
     <!-- Hero -->
     <section class="hero">
         <h1>Selamat Datang di Programing Dasar</h1>
@@ -62,11 +67,14 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->         
     <footer>
         <p>&copy; 2025 Tugas Progdas | Semua harus cobain.</p>
     </footer>
-    <script src="script.js"></script>
+
+    <button id="scrollTopBtn" aria-label="Scroll to top" title="Scroll to top"> <i class="fa-solid fa-circle-up" aria-hidden="true"></i> <span class="visually-hidden" style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;">Ke atas</span> </button>
+    <script src="script.js" defer></script>
 </body>
 </html>
